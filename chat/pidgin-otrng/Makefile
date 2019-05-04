@@ -1,0 +1,36 @@
+# $NetBSD$
+
+DISTNAME=	pidgin-otrng-0.0.0
+CATEGORIES=	chat security
+MASTER_SITES=	${MASTER_SITE_GITHUB:=otrv4/}
+GITHUB_TAG=	83242bc3c12a28b2e4c19e889a0e1e4177c42979
+EXTRACT_USING=	bsdtar
+
+MAINTAINER=	fox@NetBSD.org
+HOMEPAGE=	https://otr.im/
+COMMENT=	Plugin for pidgin to add OTR (Off-The-Record) encryption
+LICENSE=	gnu-gpl-v2
+
+DEPENDS=	libotr-ng>=0.0.0:../../wip/libotr-ng
+#		libotr-ng>=0.0.0:../../chat/libotr-ng
+
+USE_TOOLS+=	autoconf automake gmake intltool intltoolize m4 msgfmt \
+		perl pkg-config
+USE_LIBTOOL=	yes
+
+GNU_CONFIGURE=	yes
+
+pre-configure:
+	cd ${WRKSRC} && intltoolize --force --copy && autoreconf -visf
+
+.include "../../chat/pidgin/buildlink3.mk"
+#.include "../../chat/libotr-ng/buildlink3.mk"
+.include "../../wip/libotr-ng/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/glib2/buildlink3.mk"
+.include "../../security/libgcrypt/buildlink3.mk"
+#.include "../../security/libgoldilocks/buildlink3.mk"
+.include "../../wip/libgoldilocks/buildlink3.mk"
+.include "../../security/libsodium/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+.include "../../mk/bsd.pkg.mk"
