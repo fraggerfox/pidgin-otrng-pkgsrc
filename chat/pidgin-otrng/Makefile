@@ -20,6 +20,13 @@ USE_LIBTOOL=	yes
 
 GNU_CONFIGURE=	yes
 
+.include "../../mk/compiler.mk"
+
+# Supress the unknown clang pragmas warnings when using gcc
+.if !empty(PKGSRC_COMPILER:Mgcc)
+CFLAGS+=	-Wno-unknown-pragmas
+.endif
+
 pre-configure:
 	cd ${WRKSRC} && intltoolize --force --copy && autoreconf -visf
 
