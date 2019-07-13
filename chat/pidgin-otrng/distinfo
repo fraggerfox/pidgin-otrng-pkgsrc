@@ -1,6 +1,6 @@
 $NetBSD: distinfo,v 1.7 2016/03/28 00:17:12 gdt Exp $
 
-SHA1 (pidgin-otrng-0.0.0-8a804075daa95f2d60a58049793dfcee2a01ff2d.tar.gz) = b489b99ba271231aa709c3f96133513142b85a45
-RMD160 (pidgin-otrng-0.0.0-8a804075daa95f2d60a58049793dfcee2a01ff2d.tar.gz) = 31177bd4e23f05ae65a9405d234b308ec50f75ec
-SHA512 (pidgin-otrng-0.0.0-8a804075daa95f2d60a58049793dfcee2a01ff2d.tar.gz) = d2fc601b64f8079f72b7ca73efd40c5639138853a3043bee2e774ab2db83b505f1fcad823ab9273d0671ba05733d1bb1c25f4dff0fd822e2491d6b70f88fb56d
-Size (pidgin-otrng-0.0.0-8a804075daa95f2d60a58049793dfcee2a01ff2d.tar.gz) = 964171 bytes
+SHA1 (pidgin-otrng-0.0.0-7be84f9199d282ec5b4ad1496ca2f277faec8fb6.tar.gz) = fead98a17294ad8c5773831733651aac121fc297
+RMD160 (pidgin-otrng-0.0.0-7be84f9199d282ec5b4ad1496ca2f277faec8fb6.tar.gz) = bc8cf31b0bcf139f7fc20eccba43c537aa65fb8e
+SHA512 (pidgin-otrng-0.0.0-7be84f9199d282ec5b4ad1496ca2f277faec8fb6.tar.gz) = d595c58cb9efb8afe9df2e552c7c44af0aedb36653ff9e62c98e126503d44a7e91ed39b039137b05c1ae62f0d17cc91c48d7d9ff91504cba85d1fcbf40f84ae5
+Size (pidgin-otrng-0.0.0-7be84f9199d282ec5b4ad1496ca2f277faec8fb6.tar.gz) = 964345 bytes
