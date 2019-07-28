@@ -1,9 +1,9 @@
 # $NetBSD$
 
-DISTNAME=	pidgin-otrng-0.0.0
+DISTNAME=	pidgin-otrng-0.0.0.20190718
 CATEGORIES=	chat security
 MASTER_SITES=	${MASTER_SITE_GITHUB:=otrv4/}
-GITHUB_TAG=	7be84f9199d282ec5b4ad1496ca2f277faec8fb6
+GITHUB_TAG=	19e5c24ad1a9d8d5f87dd2fea05efb2f30634340
 EXTRACT_USING=	bsdtar
 
 MAINTAINER=	fox@NetBSD.org
