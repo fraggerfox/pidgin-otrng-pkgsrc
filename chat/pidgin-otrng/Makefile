@@ -28,7 +28,8 @@ CFLAGS+=	-Wno-unknown-pragmas
 .endif
 
 pre-configure:
-	cd ${WRKSRC} && intltoolize --force --copy && autoreconf -visf
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} intltoolize --force --copy && \
+		${SETENV} ${MAKE_ENV} autoreconf -visf
 
 .include "../../chat/pidgin/buildlink3.mk"
 #.include "../../chat/libotr-ng/buildlink3.mk"
