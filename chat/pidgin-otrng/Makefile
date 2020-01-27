@@ -14,8 +14,8 @@ LICENSE=	gnu-gpl-v2
 DEPENDS=	libotr-ng>=0.0.0:../../wip/libotr-ng
 #		libotr-ng>=0.0.0:../../chat/libotr-ng
 
-USE_TOOLS+=	autoconf automake gmake intltool intltoolize m4 msgfmt \
-		perl pkg-config
+USE_TOOLS+=	autoreconf autoconf automake gmake intltool intltoolize m4 \
+		msgfmt perl pkg-config
 USE_LIBTOOL=	yes
 
 GNU_CONFIGURE=	yes
